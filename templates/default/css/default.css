@@ -15,7 +15,7 @@ input
 select,
 textarea      { font-family: Arial, lucida, sans-serif; font-size: 1em; vertical-align: middle; }
 input, 
-textarea	    { background: #044979; padding: 2px 0; margin: 0; border: 1px solid #1776a4; color: #cde2f0; }
+textarea	    { background: #044979; padding: 2px 0; margin: 0; border: 1px solid #1776a4; color: #2020F0; }
 button	      { vertical-align: middle; margin: 0; padding: 0; /*height: 18px;*/ border: none; text-decoration: underline; font-weight: bold; color: #00CCFF; cursor: pointer; }
 .submit       { width: auto !important; overflow: visible; background-color: #312b2a; border: 1px solid #000 !important; padding: 0 5px; color: #fff; font-weight: bold; cursor: pointer; }
 
@@ -50,7 +50,7 @@ fieldset    { border: 0 !important; }
 .hidden   { display: none; }
 
 /* -- Basics layout -- */
-#view     { width: 762px; margin: 0 auto; }
+#view     { width: 950px; margin: 0 auto; }
 #head     { font-size: 1.2em; }
 #content  { font-size: 1.2em; }
 #foot     { font-size: 1.2em; clear: both; }
@@ -102,7 +102,7 @@ img.right { margin-right: 0 !important; }
 /* -- Main Menu -- */
 #mainMenu ul                { position: relative; height: 100%; }
 #mainMenu li                { position: relative; float: left; }
-#mainMenu li a              { display: block; width: 101px; height: 27px; padding-top: 16px; float: left; font-size: .9em; color: #fff; text-decoration: none; text-align: center; background: url('../images/bg-menu_item.gif') 0 0 no-repeat; }
+#mainMenu li a              { display: block; width: 101px; /*height: 27px;*/ padding-top: 16px; float: left; font-size: .9em; color: #fff; text-decoration: none; text-align: center; background: url('../images/bg-menu_item.gif') 0 0 no-repeat; }
 #mainMenu li.active a,
 #mainMenu li a:hover        { background-color: #0a1520; background-position: 0 -43px; }
 

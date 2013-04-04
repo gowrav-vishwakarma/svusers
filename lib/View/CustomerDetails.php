@@ -5,6 +5,7 @@ class View_CustomerDetails extends View{
 	}
 
 	function setModel($m){
+		if(!$m->loaded()) return;
 		$this->template->trySet('planning',$m->ref('plot_id')->get('planning'));		
 		$this->template->trySet('due_booking_amount',$m['down_payment']-$m['down_payment_submitted']);		
 		$over_due_emi = $m->ref('Emi')
