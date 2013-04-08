@@ -51,6 +51,7 @@ class Frontend extends ApiFrontend {
         $m=$this->add('Menu',array('current_menu_class'=>'active','inactive_menu_class'=>'ramlal'),'Menu');  
         $m->addMenuItem('index','Welcome');
         $m->addMenuItem('aboutus','About Us');
+        $m->addMenuItem('contactus','Contact Us');
         // $m->addMenuItem('profile','Profile');
         $m->addMenuItem('customers_dashboard','Customer Area');
         // $m->addMenuItem('reports','Reporting System');
@@ -59,7 +60,7 @@ class Frontend extends ApiFrontend {
 
         $auth=$this->add('BasicAuth');
           $auth->setModel('Customer','username','password');
-          $auth->allowPage(array('corrections'));
+          $auth->allowPage(array('index','aboutus','contactus'));
           $auth->check()
             ;
         // This method is executed for ALL the peages you are going to add,

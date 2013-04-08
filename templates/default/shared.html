@@ -6,21 +6,35 @@
 <meta name="copyright" content="DeepBlue - free luxury website template 2008" />
 <meta name="description" content=""  />
 <meta name="keywords" content="" />
-<title>DeepBlue - free luxury website template</title>
+<title>Welcome To SOMI Land Developers Pvt. Ltd.</title>
+<!-- <link rel="stylesheet" href="../themes/default/default.css" type="text/css" media="screen" /> -->
+<link rel="stylesheet" href="<?template?>themes/light/light.css<?/?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?template?>themes/dark/dark.css<?/?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?template?>themes/bar/bar.css<?/?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?template?>css/nivo-slider.css<?/?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?template?>themes/default/default.css<?/?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?template?>css/style.css<?/?>" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="<?template?>css/jquery-ui.css<?/?>" />
 <link rel="stylesheet" type="text/css" href="<?template?>css/atk-main.css<?/?>" />
 <link rel="stylesheet" type="text/css" href="<?template?>css/atk-custom.css<?/?>" />
 <link rel="stylesheet" type="text/css" href="<?template?>css/default.css<?/?>" media="screen" />
 <link rel="stylesheet" type="text/css" href="./css/print.css" media="print" />
 <?$js_include?>
+<script type="text/javascript" src="<?template?>css/jquery.nivo.slider.js<?/?>"></script>
     <!--[if IE 8]>
       <link rel="stylesheet" type="text/css" href="<?template?>css/ie8.css<?/?>"/>
       <script type="text/javascript" src="<?template?>css/ie8.js<?/?>"></script>
     <![endif]-->
+
     <script type="text/javascript">
       $(function(){
         <?$document_ready?>
       });
+    </script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
     </script>
 
 </head>
@@ -28,11 +42,12 @@
 
 <div id="view">
   <!-- #header (main heading + logo with slogan) -->
+  
   <div id="head">
     <!-- main headings with search component -->
     <div id="main">
-      <h1><a href="">DEEPBLUE</a></h1>
-      <h2><a href="">free luxury website template</a></h2>
+      <h1><a href="">SOMI</a></h1>
+      <h2><a href="">Somi Land Developers Pvt Ltd.</a></h2>
       <form action="" method="post" id="search">
         <fieldset>
           <input type="text" name="" value="search" class="button" />
@@ -56,14 +71,22 @@
       <?/Menu?>
     </div>
     <!-- /main horizontal menu -->
-    <hr class="hidden" />
+    <!-- <hr class="hidden" /> -->
     <!-- logo with slogan -->
-    <div id="logo">
-      <a href="" class="block">&nbsp;</a>
-      <h2>Place your slogan</h2>
-    </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider" >
+                <img src="<?template?>images/toystory.jpg<?/?>" data-thumb="images/toystory.jpg" alt="" />
+                <img src="<?template?>images/1.jpg<?/?>" data-thumb="images/1.jpg" alt="" title="" />
+                <img src="<?template?>images/2.jpg<?/?>" data-thumb="images/2.jpg" alt="" data-transition="slideInLeft" />
+                <img src="<?template?>images/3.jpg<?/?>" data-thumb="images/3.jpg" alt="" title=""/>
+                <img src="<?template?>images/4.jpg<?/?>" data-thumb="images/4.jpg" alt="" title=""/>
+                <img src="<?template?>images/5.jpg<?/?>" data-thumb="images/5.jpg" alt="" title=""/>
+            </div>
+            
+        </div>
+    
     <!-- /logo with slogan -->
-    <hr class="hidden" />
+    <!-- <hr class="hidden" /> -->
   </div>
   <!-- /#header (main heading + logo with slogan) -->
   
@@ -74,7 +97,7 @@
       <?Content?>
       <!-- #first (main) article -->
       <div class="item mainItem">
-        <h2>Main Article</h2>
+        <h2>Welcome To SOMI Land Developers Private Ltd.</h2>
         <p class="info"><span class="date">01. 01. 2008</span> - <a href="">article tag</a> - <a href="">18 comments</a></p>
         <p class="perex">Lorrem ipsum dolor sit amet, consectetuer adipiscing elit. Cras egestas, enim vitae viverra rhoncus, ligula massa interdum orci, vel imperdiet erat neque eu sem. Vivamus quis mauris. Sed mollis ligula mollis lorem. Pellentesque commodo, felis in dictum adipiscing, dolor neque congue risus, at ultrices lectus tortor et pede. Cras egestas, enim vitae viverra rhoncus, ligula massa interdum orci, vel imperdiet. Pellentesque commodo, felis in dictum adipiscing</p>
       </div>
@@ -116,57 +139,21 @@
       <?/Content?>
     </div>
     <!-- /#left part of web - main content -->
-    <hr class="hidden" />
+   
     <!-- #right part of web - submenu boxes with simple text -->
-    <div id="menuBlock">
-      <div class="box boxText firstBox">
-        <h3>Personal profile:</h3>
-        <div class="img"><img src="img/profile.jpg" width="56" alt="" /></div>
-        <div class="self">
-          <p class="last">Name Surename<br />Age:&nbsp;25&nbsp;years<br />Status:<br />email:&nbsp;<a href="">email@email.com</a></p>
-        </div>
-      </div>
-      <div class="box subMenu">
-        <h3>Categories:</h3>
-        <ul>
-          <li><a href="">About me</a></li>
-          <li><a href="">Photos</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li class="active"><a href="">Categories</a></li>
-          <li><a href="">Archive</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
-      <div class="box subMenu">
-        <h3>Archive:</h3>
-        <ul>
-          <li><a href="">January 2008</a></li>
-          <li><a href="">February 2008</a></li>
-          <li><a href="">March 2008</a></li>
-          <li><a href="">April 2008</a></li>
-          <li><a href="">May 2008</a></li>
-        </ul>
-      </div>
-    </div>
+  
     <!-- /#right part of web -->
   </div>
   <!-- /#main content construct -->
   
   <!-- #accessible components - do not delete this !!! -->
-  <hr class="hidden" />
-  <ul class="hidden">
-    <li><a href="#view">On top</a></li>
-    <li><a href="#content">Back to content</a></li>
-  </ul>
-  <hr class="hidden" />
-  <!-- /#accessible components -->
-  
+ 
   <!-- #footer -->
   <div id="foot">
-    <p class="fl">&copy; all rights reserved</p>
+    <p class="fl">&copy; all rights reserved: SOMI Land Developers Private Ltd.</p> <p style="float:right"> Designed and Developed by <a href='http://www.xavoc.com' target="_blank">Xavoc International</a></p>
     
     <!-- /#   LINKS AND AUTHOR-SIGNATURE CANNOT BE REMOVED !!! -->
-    <p class="fr">sponsor:&nbsp;<a href="http://www.tvorba-webu.cz" title="Tvorba webovych stranek, webhosting">tvorba-webu.cz</a>&nbsp;&nbsp;|&nbsp;&nbsp;created by&nbsp;<a href="http://www.breezy.cz" class="ico ico-breezy">Breezy New Media</a></p>
+    
   </div>
   <!-- /#footer -->
 </div>
