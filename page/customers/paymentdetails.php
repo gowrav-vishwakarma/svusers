@@ -17,12 +17,13 @@ class page_customers_paymentdetails extends page_customer{
 		$grid=$this->add('Grid');
 
 		if($_GET['filter']){
-			if($_GET['sales_id'])
-				$sale->addCondition('sales_id',$_GET['sales_id']);
+			// if(	$_GET['sale_id'])
+				$deposite->addCondition('sales_id',$_GET['sale_id']);
 		}else{
-			$sale->addCondition('id',-1);
+			$deposite->addCondition('id',-1);
 		}
 
+		// $deposite->addCondition('sales_id',$form->get('sales'));
 		$grid->setModel($deposite);
 
 		if($form->isSubmitted()){
