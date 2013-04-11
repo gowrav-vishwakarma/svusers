@@ -28,6 +28,14 @@ class View_CustomerDetails extends View{
 		$this->template->trySet('LegB',$m->ref('customer_id')->ref('Distributor')->tryLoadAny()->ref('legB_id')->get('name'));		
 		$this->template->trySet('LegC',$m->ref('customer_id')->ref('Distributor')->tryLoadAny()->ref('legC_id')->get('name'));		
 		$this->template->trySet('LegD',$m->ref('customer_id')->ref('Distributor')->tryLoadAny()->ref('legD_id')->get('name'));		
+		
+		$Distributor=$m->ref('customer_id')->ref('Distributor')->tryLoadAny();
+		$this->template->trySet('Introduction_Income',$Distributor['Introduction_Income']);		
+		$this->template->trySet('Level_1_Commission',$Distributor['Level_1_Commission']);		
+		$this->template->trySet('Level_2_Commission',$Distributor['Level_2_Commission']);		
+		$this->template->trySet('Level_3_Commission',$Distributor['Level_3_Commission']);		
+		$this->template->trySet('Level_4_Commission',$Distributor['Level_4_Commission']);		
+		$this->template->trySet('Level_5_Commission',$Distributor['Level_5_Commission']);		
 		parent::setModel($m);
 	}
 
